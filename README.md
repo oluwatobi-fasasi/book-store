@@ -63,8 +63,8 @@ Browser (e.g. Chrome)
 
 ### Setup
 ```
-git clone https://github.com/oluwatobi-fasasi/magic-math.git
-cd magic-math
+git clone https://github.com/oluwatobi-fasasi/book-store.git
+cd book-store
 ```
 
 
