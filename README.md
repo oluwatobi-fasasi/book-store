@@ -137,6 +137,6 @@ I would like to thank Microverse:smile: as well as my code partner(s)
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](LICENSE.md) licensed.
+This project is [MIT](https://github.com/oluwatobi-fasasi/book-store/blob/main/LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
