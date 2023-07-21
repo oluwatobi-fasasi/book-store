@@ -101,7 +101,7 @@ npm run build
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- [ ] *Perform basic math operations*
+- [ ] *Add and remove book*
 - [ ] *Add more Ux*
 - [ ] *Add respnsiveness*
 
