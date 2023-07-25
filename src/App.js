@@ -6,12 +6,12 @@ import Categories from './components/Categories';
 function App() {
   return (
     <BrowserRouter>
+      <Header />
       <Routes>
         <Route
           path="/"
           element={(
             <>
-              <Header />
               <BookStore />
             </>
 )}
