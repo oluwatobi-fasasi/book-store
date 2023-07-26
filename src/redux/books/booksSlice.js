@@ -29,7 +29,7 @@ export const bookSlice = createSlice({
       state.push(action.payload);
     },
     removeBook: (state, action) => {
-      const idx = state.findIndex((book) => book.id === action.payload.id);
+      const idx = state.findIndex((book) => book.item_id === action.payload);
       if (idx !== -1) state.splice(idx, 1);
     },
   },
