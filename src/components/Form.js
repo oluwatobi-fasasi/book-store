@@ -9,7 +9,7 @@ export default function Form() {
 
   const submitForm = (e) => {
     e.preventDefault();
-    dispatch(addBook({ title, author, id: Date.now() }));
+    dispatch(addBook({ title, author, item_id: Date.now() }));
     setTitle('');
     setAuthor('');
   };
