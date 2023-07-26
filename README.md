@@ -94,7 +94,7 @@ npm run build
 
 - GitHub: [@oluwatobi](https://github.com/oluwatobi-fasasi)
 - Twitter: [@Fasasi](https://twitter.com/FasasiTobi1)
-- LinkedIn: [Fasasi](https://www.linkedin.com/in/fasasi-abdulwasih-oluwatobi-129a8b109/)
+- LinkedIn: [Fasasi](https://www.linkedin.com/in/abdulwasih-oluwatobi-fasasi-129a8b109/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
