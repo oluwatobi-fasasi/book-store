@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { addBook } from '../redux/books/booksSlice';
+import { addBookAsync } from '../redux/books/booksSlice';
 
 export default function Form() {
   const dispatch = useDispatch();
@@ -9,7 +9,9 @@ export default function Form() {
 
   const submitForm = (e) => {
     e.preventDefault();
-    dispatch(addBook({ title, author, item_id: Date.now() }));
+    dispatch(addBookAsync({
+      title, author, item_id: Date.now(), category: 'action',
+    }));
     setTitle('');
     setAuthor('');
   };

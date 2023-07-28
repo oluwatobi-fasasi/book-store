@@ -1,27 +1,31 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { removeBook } from '../redux/books/booksSlice';
+import { removeBookAsync } from '../redux/books/booksSlice';
 
 export default function BookCase() {
-  const { book } = useSelector((state) => state);
+  const { books } = useSelector((store) => store.book);
+  // console.log(typeof books);
   const dispatch = useDispatch();
+  const handleRemoveBook = (itemId) => {
+    dispatch(removeBookAsync(itemId));
+  };
   return (
     <div key="">
-      {book.map((b) => (
+      {books?.map((b) => (
         <div key="">
           <div className="flex justify-between mx-44 mt-20 bg-red-200">
             <section>
               <h4>
                 Book Title :
-                {b.title}
+                {b?.title}
               </h4>
               <p>
                 Author:
-                {b.author}
+                {b?.author}
               </p>
               <div className="flex divide-x-4 mt-4">
                 <p className="pr-6">Comments</p>
-                <button type="button" className="px-6" onClick={() => dispatch(removeBook(b.item_id))}>Remove</button>
+                <button type="button" className="px-6" onClick={handleRemoveBook}>Remove</button>
                 <p className="px-6">Edit</p>
               </div>
             </section>
