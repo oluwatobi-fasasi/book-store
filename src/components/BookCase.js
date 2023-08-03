@@ -34,7 +34,7 @@ export default function BookCase() {
 
                 <CircleProgressBar progress={progress} />
 
-                <p className="pl-2">
+                <p className="pl-2 pt-5">
                   <span className="text-4xl font-montserrat">64%</span>
                   <br />
                   {' '}
