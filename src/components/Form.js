@@ -24,10 +24,10 @@ export default function Form() {
           <input type="text" className="border border-gray-300 ml-10 w-96 h-14 pl-5" value={author} onChange={(e) => setAuthor(e.target.value)} placeholder="Author" />
           <select name="cars" id="cars" className="h-14 w-72 ml-10 outline-none border border-gray-300 bg-white pl-5">
             <option value="" disabled selected hidden>Category</option>
-            <option value="volvo">Volvo</option>
-            <option value="saab">Saab</option>
-            <option value="mercedes">Mercedes</option>
-            <option value="audi">Audi</option>
+            <option value="action">Action</option>
+            <option value="horror">Horror</option>
+            <option value="fiction">Fiction</option>
+            <option value="action">Action</option>
           </select>
           <button type="submit" className="ml-14 px-20 py-4 rounded bg-blue-400 font-robot font-bold text-white">ADD BOOK</button>
         </form>
