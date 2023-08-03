@@ -1,18 +1,18 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { removeBookAsync } from '../redux/books/booksSlice';
+import { removeBookAsync, selectAll } from '../redux/books/booksSlice';
 
 export default function BookCase() {
-  const { books } = useSelector((store) => store.book);
-  // console.log(typeof books);
+  const { books } = useSelector(selectAll);
   const dispatch = useDispatch();
   const handleRemoveBook = (itemId) => {
     dispatch(removeBookAsync(itemId));
   };
+
   return (
     <div key="">
-      {books?.map((b) => (
-        <div key="">
+      {Object.entries(books).map(([id, book]) => book.map((b) => (
+        <div key={id}>
           <div className="flex justify-between mx-44 mt-20 bg-red-200">
             <section>
               <h4>
@@ -25,7 +25,7 @@ export default function BookCase() {
               </p>
               <div className="flex divide-x-4 mt-4">
                 <p className="pr-6">Comments</p>
-                <button type="button" className="px-6" onClick={handleRemoveBook}>Remove</button>
+                <button type="button" className="px-6" onClick={() => handleRemoveBook(id)}>Remove</button>
                 <p className="px-6">Edit</p>
               </div>
             </section>
@@ -42,7 +42,7 @@ export default function BookCase() {
             </section>
           </div>
         </div>
-      ))}
+      )))}
     </div>
   );
 }
