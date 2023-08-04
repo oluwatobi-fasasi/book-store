@@ -17,7 +17,7 @@ export default function BookCase() {
           <div className="flex justify-between w-300 h-170 mt-9 py-8 pl-10 pr-20 rounded-md border border-white-three bg-white-two">
             <section>
               <p className="font-montserrat font-bold text-gray-900 opacity-50">{b?.category}</p>
-              <h4 className="w-49 h-7 mt-1 mr-80 font-bold font-roboto text-3xl leading-tight tracking-tighter text-gray-800">
+              <h4 className="Title">
                 {b?.title}
               </h4>
               <p className="Suzanne-Collins w-27 h-4 mt-1 font-robotoSlab text-s text-blue-400">
