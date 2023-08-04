@@ -11,7 +11,7 @@ export default function BookCase() {
   };
   const progress = 80;
   return (
-    <div key="">
+    <div key="" className="mb-10">
       {Object.entries(books).map(([id, book]) => book.map((b) => (
         <div key={id} className="bg-white">
           <div className="flex justify-between w-300 h-170 mt-9 py-8 pl-10 pr-20 rounded-md border border-white-three bg-white-two">

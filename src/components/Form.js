@@ -17,8 +17,8 @@ export default function Form() {
   };
   return (
     <div>
-      <section className="mt-11 pb-16">
-        <h2 className="font-montserrat font-bold text-gray-900 opacity-50 text-2xl pb-4">ADD NEW BOOK</h2>
+      <section className="mt-5 pb-16">
+        <h2 className="font-montserrat font-bold text-gray-900 opacity-50 text-2xl">ADD NEW BOOK</h2>
         <form action="" onSubmit={submitForm} className="">
           <input type="text" className="Lesson-Panel" value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Title" />
           <input type="text" className="Lesson-Panel2" value={author} onChange={(e) => setAuthor(e.target.value)} placeholder="Author" />
