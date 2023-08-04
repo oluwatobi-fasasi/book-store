@@ -12,7 +12,7 @@ export default function BookStore() {
   }, [dispatch]);
 
   return (
-    <div>
+    <div className="bg-gray-100 pl-44 pr-44 pt-10 divide-y-2">
       <BookCase />
       <Form />
     </div>

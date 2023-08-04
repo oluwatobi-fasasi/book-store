@@ -4,7 +4,13 @@ module.exports = {
     './src/**/*.{js,jsx,ts,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        robot: ['Roboto Slab', 'serif'],
+        montserrat: ['Montserrat', 'sans-serif'],
+
+      },
+    },
   },
   plugins: [],
 };

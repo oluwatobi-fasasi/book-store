@@ -10,19 +10,28 @@ export default function Form() {
   const submitForm = (e) => {
     e.preventDefault();
     dispatch(addBookAsync({
-      title, author, item_id: Date.now(), category: 'action',
+      title, author, item_id: Date.now(), category: 'Action',
     }));
     setTitle('');
     setAuthor('');
   };
   return (
     <div>
-      <section className="mx-44 mt-11">
-        <h2>ADD NEW BOOK</h2>
-        <form action="" onSubmit={submitForm}>
-          <input type="text" className="border border-grey-900 h-10" value={author} onChange={(e) => setAuthor(e.target.value)} placeholder="Author" />
-          <input type="text" className="border border-grey-900 ml-10 h-10" value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Title" />
-          <button type="submit" className="bg-blue-700 p-4 rounded-lg ml-10">ADD BOOK</button>
+      <section className="mt-5 pb-16">
+        <h2 className="font-montserrat font-bold text-gray-900 opacity-50 text-2xl">ADD NEW BOOK</h2>
+        <form action="" onSubmit={submitForm} className="">
+          <input type="text" className="Lesson-Panel" value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Title" />
+          <input type="text" className="Lesson-Panel2" value={author} onChange={(e) => setAuthor(e.target.value)} placeholder="Author" />
+          <select name="cars" id="cars" className="Lesson-Panel3 text-gray-900 opacity-50">
+            <option value="" disabled selected hidden>Category</option>
+            <option value="action">Action</option>
+            <option value="horror">Horror</option>
+            <option value="fiction">Fiction</option>
+            <option value="action">Action</option>
+          </select>
+
+          <button type="submit" className="Rectangle-2 bg-blue-500"><span className="ADD-BOOK text-white">ADD BOOK</span></button>
+
         </form>
       </section>
     </div>
